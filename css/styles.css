@@ -100,7 +100,7 @@ h6 {
   position: relative;
 }
 
-.nav-link.current::before {
+.nav-link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -129,6 +129,7 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -149,7 +150,7 @@ h6 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -182,6 +183,7 @@ h6 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -246,6 +248,10 @@ h6 {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.social-icon {
+  fill: #f4f4fd;
 }
 
 /* ---------------SOLUTIONS-------------- */
@@ -444,7 +450,6 @@ h6 {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .socials-text {
@@ -453,6 +458,7 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-container {
